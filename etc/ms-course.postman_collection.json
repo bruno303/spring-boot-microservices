@@ -86,6 +86,91 @@
 				}
 			],
 			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Fase 2",
+			"item": [
+				{
+					"name": "hr-worker",
+					"item": [
+						{
+							"name": "All Workers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/hr-worker/workers/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"hr-worker",
+										"workers",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Worker By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/hr-worker/workers/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"hr-worker",
+										"workers",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "hr-payroll",
+					"item": [
+						{
+							"name": "Payment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8765/hr-payroll/payments/2/days/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8765",
+									"path": [
+										"hr-payroll",
+										"payments",
+										"2",
+										"days",
+										"10"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"protocolProfileBehavior": {}
