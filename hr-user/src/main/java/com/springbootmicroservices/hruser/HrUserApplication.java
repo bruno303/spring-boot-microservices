@@ -13,7 +13,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @SpringBootApplication
 public class HrUserApplication {
 
-	private final Logger LOGGER = LoggerFactory.getLogger(HrUserApplication.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(HrUserApplication.class);
 
 	public static void main(String[] args) {
 		SpringApplication.run(HrUserApplication.class, args);
@@ -22,7 +22,8 @@ public class HrUserApplication {
 	@Bean
 	public CommandLineRunner bcriptPassword(BCryptPasswordEncoder passwordEncoder) {
 		return args -> {
-			LOGGER.info("BCRYPT = {}", passwordEncoder.encode("123456"));
+			final String encodedPassword = passwordEncoder.encode("123456");
+			LOGGER.info("BCRYPT = {}", encodedPassword);
 		};
 	}
 }
