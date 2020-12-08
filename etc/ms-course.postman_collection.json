@@ -355,15 +355,23 @@
 						{
 							"name": "All Workers",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8765/hr-worker/workers/",
-									"protocol": "http",
+									"raw": "{{api-gateway}}/hr-worker/workers/",
 									"host": [
-										"localhost"
+										"{{api-gateway}}"
 									],
-									"port": "8765",
 									"path": [
 										"hr-worker",
 										"workers",
@@ -376,15 +384,23 @@
 						{
 							"name": "Worker By Id",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8765/hr-worker/workers/2",
-									"protocol": "http",
+									"raw": "{{api-gateway}}/hr-worker/workers/2",
 									"host": [
-										"localhost"
+										"{{api-gateway}}"
 									],
-									"port": "8765",
 									"path": [
 										"hr-worker",
 										"workers",
@@ -397,15 +413,23 @@
 						{
 							"name": "Show Worker Configs on Console",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8765/hr-worker/workers/configs",
-									"protocol": "http",
+									"raw": "{{api-gateway}}/hr-worker/workers/configs",
 									"host": [
-										"localhost"
+										"{{api-gateway}}"
 									],
-									"port": "8765",
 									"path": [
 										"hr-worker",
 										"workers",
@@ -418,15 +442,23 @@
 						{
 							"name": "Actuator Refresh",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8765/hr-worker/actuator/refresh",
-									"protocol": "http",
+									"raw": "{{api-gateway}}/hr-worker/actuator/refresh",
 									"host": [
-										"localhost"
+										"{{api-gateway}}"
 									],
-									"port": "8765",
 									"path": [
 										"hr-worker",
 										"actuator",
@@ -446,15 +478,23 @@
 						{
 							"name": "Payment",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8765/hr-payroll/payments/2/days/10",
-									"protocol": "http",
+									"raw": "{{api-gateway}}/hr-payroll/payments/2/days/10",
 									"host": [
-										"localhost"
+										"{{api-gateway}}"
 									],
-									"port": "8765",
 									"path": [
 										"hr-payroll",
 										"payments",
@@ -476,15 +516,23 @@
 						{
 							"name": "hr-worker configs default profile",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8888/hr-worker/default",
-									"protocol": "http",
+									"raw": "{{config-host}}/hr-worker/default",
 									"host": [
-										"localhost"
+										"{{config-host}}"
 									],
-									"port": "8888",
 									"path": [
 										"hr-worker",
 										"default"
@@ -496,15 +544,23 @@
 						{
 							"name": "hr-worker configs test profile",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8888/hr-worker/test",
-									"protocol": "http",
+									"raw": "{{config-host}}/hr-worker/test",
 									"host": [
-										"localhost"
+										"{{config-host}}"
 									],
-									"port": "8888",
 									"path": [
 										"hr-worker",
 										"test"
@@ -523,15 +579,23 @@
 						{
 							"name": "User By Id",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8765/hr-user/users/2",
-									"protocol": "http",
+									"raw": "{{api-gateway}}/hr-user/users/2",
 									"host": [
-										"localhost"
+										"{{api-gateway}}"
 									],
-									"port": "8765",
 									"path": [
 										"hr-user",
 										"users",
@@ -544,15 +608,23 @@
 						{
 							"name": "User By Email",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8765/hr-user/users/search?email=leia@gmail.com",
-									"protocol": "http",
+									"raw": "{{api-gateway}}/hr-user/users/search?email=nina@gmail.com",
 									"host": [
-										"localhost"
+										"{{api-gateway}}"
 									],
-									"port": "8765",
 									"path": [
 										"hr-user",
 										"users",
@@ -561,7 +633,7 @@
 									"query": [
 										{
 											"key": "email",
-											"value": "leia@gmail.com"
+											"value": "nina@gmail.com"
 										}
 									]
 								}
@@ -578,15 +650,23 @@
 						{
 							"name": "User By Email",
 							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8765/hr-oauth/users/search?email=nina@gmail.com",
-									"protocol": "http",
+									"raw": "{{api-gateway}}/hr-oauth/users/search?email=nina@gmail.com",
 									"host": [
-										"localhost"
+										"{{api-gateway}}"
 									],
-									"port": "8765",
 									"path": [
 										"hr-oauth",
 										"users",
@@ -604,18 +684,32 @@
 						},
 						{
 							"name": "Login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "6eaeef33-9fc9-49e0-a7f2-de863451ae27",
+										"exec": [
+											"if (pm.response.code >= 200 && pm.response.code < 300) {",
+											"    pm.environment.set('token', pm.response.json().access_token);",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"request": {
 								"auth": {
 									"type": "basic",
 									"basic": [
 										{
-											"key": "username",
-											"value": "myappname123",
+											"key": "password",
+											"value": "{{client-secret}}",
 											"type": "string"
 										},
 										{
-											"key": "password",
-											"value": "myappsecret123",
+											"key": "username",
+											"value": "{{client-name}}",
 											"type": "string"
 										}
 									]
@@ -627,12 +721,12 @@
 									"urlencoded": [
 										{
 											"key": "username",
-											"value": "nina@gmail.com",
+											"value": "{{username}}",
 											"type": "text"
 										},
 										{
 											"key": "password",
-											"value": "123456",
+											"value": "{{password}}",
 											"type": "text"
 										},
 										{
@@ -643,12 +737,10 @@
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8765/hr-oauth/oauth/token",
-									"protocol": "http",
+									"raw": "{{api-gateway}}/hr-oauth/oauth/token",
 									"host": [
-										"localhost"
+										"{{api-gateway}}"
 									],
-									"port": "8765",
 									"path": [
 										"hr-oauth",
 										"oauth",
