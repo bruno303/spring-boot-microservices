@@ -22,7 +22,7 @@ public class AppConfig {
 	}
 
 	@Bean
-	public JwtTokenStore tokenStore(JwtAccessTokenConverter accessTokenConverter) {
-		return new JwtTokenStore(accessTokenConverter);
+	public JwtTokenStore tokenStore() {
+		return new JwtTokenStore(accessTokenConverter());
 	}
 }
